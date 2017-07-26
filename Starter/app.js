@@ -128,4 +128,49 @@
 // 	console.log('Hi')
 // })
 
+// BY VALVUE (PRIMITIVES)
+// var a = 3
+// var b 
+
+// b = a 
+// a = 2
+
+// console.log(a)
+// console.log(b)
+
+// BY REFERENCE (all object including fucntions )
+
+var c = {
+	greeting: "What up"
+}
+var d
+
+d = c 
+c.greeting = "Hey"
+
+console.log(c)
+console.log(d)
+
+
+// BY REFERENCE (EVEN AS PARAMETERS)
+
+function changeGreeting(obj) {
+	obj.greeting =  "Hola"
+}
+
+changeGreeting(d)
+console.log(c)
+console.log(d)
+
+
+
+c = { greeting: "What" }
+console.log(c)
+console.log(d)
+
+
+
+
+
+
 
