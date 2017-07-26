@@ -98,4 +98,34 @@
 
 // console.log(greet.language)
 
+// Anonymous Functions
+
+// greet()
+
+// function greet() {
+// 	console.log('Hi')
+// }
+
+// anonymousGreet()
+
+// // v doesn not hoist 
+// var anonymousGreet = function() {
+// 	console.log('Hi')
+// }
+
+// function log(a) {
+// 	console.log(a)
+// }
+
+// var b = 3
+// log(b)
+
+// function log(a) {
+// 	a()
+// }
+
+// log(function(){
+// 	console.log('Hi')
+// })
+
 
