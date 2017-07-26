@@ -57,7 +57,7 @@
 
 // Objects and functions
 
-var person = new Object()
+// var person = new Object()
 
 // person["firstName"] = "Tony"
 // person["lastName"] = "Alicia"
@@ -69,12 +69,24 @@ var person = new Object()
 
 // Dot operator 
 
-person.city = new Object()
-// person.city = "Berkeley"
-person.city.zip = "zip"
-person.street = "Carleton"
-console.log(person.city.zip)
+// person.city = new Object()
+// // person.city = "Berkeley"
+// person.city.zip = "zip"
+// person.street = "Carleton"
+// console.log(person.city.zip)
 
+// Object Literal
+
+person = { 
+		firstName: 'Tony', 
+		lastname: 'Roma',
+		address: {
+			street: 'Carleton',
+			zip: '94702'
+		} 
+	}
+	
+console.log(person)
 
 
 
