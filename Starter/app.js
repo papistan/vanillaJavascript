@@ -77,16 +77,25 @@
 
 // Object Literal
 
-person = { 
-		firstName: 'Tony', 
-		lastname: 'Roma',
-		address: {
-			street: 'Carleton',
-			zip: '94702'
-		} 
-	}
-	
-console.log(person)
+// person = { 
+// 		firstName: 'Tony', 
+// 		lastname: 'Roma',
+// 		address: {
+// 			street: 'Carleton',
+// 			zip: '94702'
+// 		} 
+// 	}
 
+// console.log(person)
+
+// Functions = objects 
+
+// function greet() {
+// 	console.log('hi')
+// }
+
+// greet.language = 'english'
+
+// console.log(greet.language)
 
 
