@@ -140,37 +140,50 @@
 
 // BY REFERENCE (all object including fucntions )
 
-var c = {
-	greeting: "What up"
-}
-var d
+// var c = {
+// 	greeting: "What up"
+// }
+// var d
 
-d = c 
-c.greeting = "Hey"
+// d = c 
+// c.greeting = "Hey"
 
-console.log(c)
-console.log(d)
+// console.log(c)
+// console.log(d)
 
 
 // BY REFERENCE (EVEN AS PARAMETERS)
 
-function changeGreeting(obj) {
-	obj.greeting =  "Hola"
+// function changeGreeting(obj) {
+// 	obj.greeting =  "Hola"
+// }
+
+// changeGreeting(d)
+// console.log(c)
+// console.log(d)
+
+
+
+// c = { greeting: "What" }
+// console.log(c)
+// console.log(d)
+
+// GLOBAL LEVEL SCOPE 
+
+function a() {
+	console.log(this)
 }
 
-changeGreeting(d)
-console.log(c)
-console.log(d)
+a()
 
+var c = {
+	name: 'Cee',
+	log: function() {
+		console.log(this)
+	}
+}
 
-
-c = { greeting: "What" }
-console.log(c)
-console.log(d)
-
-
-
-
+c.log()
 
 
 
