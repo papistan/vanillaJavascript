@@ -170,20 +170,53 @@
 
 // GLOBAL LEVEL SCOPE 
 
-function a() {
-	console.log(this)
-}
+// function a() {
+// 	console.log(this)
+// }
 
-a()
+// a()
 
-var c = {
-	name: 'Cee',
-	log: function() {
-		console.log(this)
-	}
-}
+// var c = {
+// 	name: 'Cee',
+// 	log: function() {
+// 		console.log(this)
+// 	}
+// }
 
-c.log()
+// c.log()
+
+// ARGUEMENTS
+
+// function greet(first, middle, last = 'Flanders'){
+// 	console.log(first)
+// 	console.log(middle)
+// 	console.log(last)
+// }
+
+// greet()
+// greet('Homer')
+// greet('Homer', 'J')
+// greet('Homer', 'J', 'Simpson')
+
+// AUTOMATIC SEMICOLONS
+
+// function soccer(){
+// 	return
+// 	{
+// 		ball: 'large'
+// 	}
+// }
+
+// SO ALWAYS PUT ON SAME LINE
+
+// function soccer(){
+// 	return {
+// 		ball: 'large'
+// 	}
+// }
+
+
+
 
 
 
