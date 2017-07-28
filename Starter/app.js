@@ -215,6 +215,67 @@
 // 	}
 // }
 
+// Immediately Invoked Function Expressions (IIFE)
+
+// FUNCTION STATEMENT
+
+// function greet(name) {
+// 	console.log('Hello ' + name);
+// };
+// greet()
+
+// // FUNCTION Expression
+
+// var greetFunc = function(name){
+// 	console.log('Hello ' + name);
+// };
+
+// greetFunc()
+
+// Immediately Invoked Function Expressions (IIFE)
+
+// var greeting = function(name){
+// 	return 'Hello ' + name;
+// }('Homer');
+
+// console.log(greeting);
+
+
+// (function(name){
+
+// 	return 'Hello ' + name;
+
+// }('Homer'));
+
+// GLOBAL 
+
+// global.name = 'World'
+
+
+// CLOSURES
+
+function greet(whattosay) {
+
+	return function(name) {
+		console.log(whattosay + ' ' + name);
+	}
+
+}
+
+greet('Hi')('Tony');
+
+var sayHi = greet('Hi');
+sayHi('Tony');
+
+
+
+
+
+
+
+
+
+
 
 
 
