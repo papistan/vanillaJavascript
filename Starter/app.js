@@ -254,21 +254,39 @@
 
 // CLOSURES
 
-function greet(whattosay) {
+// function greet(whattosay) {
 
-	return function(name) {
-		console.log(whattosay + ' ' + name);
+// 	return function(name) {
+// 		console.log(whattosay + ' ' + name);
+// 	}
+
+// }
+
+// greet('Hi')('Tony');
+
+// var sayHi = greet('Hi');
+// sayHi('Tony');
+
+function buildFunctions() {
+	var arr = [];
+
+	for (var i = 0; i < 3; i++) {
+
+		arr.push(
+			function(){
+				console.log(i);
+			}
+		)
+
 	}
-
+	return arr;
 }
 
-greet('Hi')('Tony');
+var fs = buildFunctions();
 
-var sayHi = greet('Hi');
-sayHi('Tony');
-
-
-
+fs[0]();
+fs[1]();
+fs[2]();
 
 
 
