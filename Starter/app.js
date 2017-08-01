@@ -267,33 +267,49 @@
 // var sayHi = greet('Hi');
 // sayHi('Tony');
 
-function buildFunctions() {
-	var arr = [];
+// function buildFunctions() {
+// 	var arr = [];
 
-	for (var i = 0; i < 3; i++) {
+// 	for (var i = 0; i < 3; i++) {
 
-		arr.push(
-			function(){
-				console.log(i);
-			}
-		)
+// 		arr.push(
+// 			function(){
+// 				console.log(i);
+// 			}
+// 		)
 
+// 	}
+// 	return arr;
+// }
+
+// var fs = buildFunctions();
+
+// fs[0]();
+// fs[1]();
+// fs[2]();
+
+
+FUNCTION FACTORY
+
+function makeGreeting(language) {
+
+	return function(firstName, lastName) {
+		if (language === 'en') {
+			console.log('Hello ' + firstName + ' ' + lastname)
+		} 
+
+		if (language === 'es') {
+			console.log('Hola ' + firstName + ' ' + lastname)
+		}
 	}
-	return arr;
+
 }
 
-var fs = buildFunctions();
+var greetEnglish = makeGreeting('en')
+var greetSpanish = makeGreeting('es')
 
-fs[0]();
-fs[1]();
-fs[2]();
-
-
-
-
-
-
-
+greetEnglish('John', 'Doe')
+greetSpanish('John', 'Doe')
 
 
 
