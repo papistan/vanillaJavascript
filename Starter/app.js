@@ -289,27 +289,50 @@
 // fs[2]();
 
 
-FUNCTION FACTORY
+// FUNCTION FACTORY
 
-function makeGreeting(language) {
+// function makeGreeting(language) {
 
-	return function(firstName, lastName) {
-		if (language === 'en') {
-			console.log('Hello ' + firstName + ' ' + lastname)
-		} 
+// 	return function(firstName, lastName) {
+// 		if (language === 'en') {
+// 			console.log('Hello ' + firstName + ' ' + lastname)
+// 		} 
 
-		if (language === 'es') {
-			console.log('Hola ' + firstName + ' ' + lastname)
-		}
-	}
+// 		if (language === 'es') {
+// 			console.log('Hola ' + firstName + ' ' + lastname)
+// 		}
+// 	}
 
-}
+// }
 
-var greetEnglish = makeGreeting('en')
-var greetSpanish = makeGreeting('es')
+// var greetEnglish = makeGreeting('en')
+// var greetSpanish = makeGreeting('es')
 
-greetEnglish('John', 'Doe')
-greetSpanish('John', 'Doe')
+// greetEnglish('John', 'Doe')
+// greetSpanish('John', 'Doe')
+
+
+// CLOSURES + FUNCTION EXPRESSION 
+function sayHiLater(){
+	var greeting = 'Hi'
+
+	setTimeOut(function(){
+		console.log(greeting);
+	}, 3000)
+};
+
+sayHiLater();
+
+// CALLBACK FUNCTION - sending a function another function to run
+
+
+
+
+
+
+
+
+
 
 
 
