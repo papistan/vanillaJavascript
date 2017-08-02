@@ -401,7 +401,15 @@ ______
 
 UNDERSCORE library - lots of precreated methods to use, ex.  var x = _.filter([1, 2, 3, 4, 5, 6], function(item){ return item > 3 });
 
+______
 
+FOR IN
+
+for (var prop in john ) {
+	if (john.hasOwnProperty('firstName'))
+
+		console.log(prop + ': ' + john[prop])
+}
 
 
 
