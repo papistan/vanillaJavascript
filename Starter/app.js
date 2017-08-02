@@ -369,11 +369,37 @@ function multiply(a, b) {
 
 var multiplyByTwo = multiply.bind(this, 2);
 
+FUNCTIONAL PROGRAMMING WITH JS
+
+function mapForEach(arr, fn) {
+	var newArr = [];
+	for (var i = 0; i < arr.length; i++) {
+	    newArr.push(
+	    	fn(arr[i])
+	  )
+	}
+	return newArr;
+}
+
+var arr1 = [1, 2, 3];
+console.log(arr1);
+
+var arr2 = mapForEach(arr1, function(item){
+	return item * 2;
+})
+
+var checkPastLimit = function(limiter, item) {
+	return item > limiter;
+}
+
+var arr4 = mapForEach(arr1, checkPastLimit.bind(this, 1));
+console.log(arr4)
 
 
 
+______
 
-
+UNDERSCORE library - lots of precreated methods to use, ex.  var x = _.filter([1, 2, 3, 4, 5, 6], function(item){ return item > 3 });
 
 
 
