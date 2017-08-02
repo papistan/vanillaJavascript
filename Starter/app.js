@@ -312,18 +312,67 @@
 // greetSpanish('John', 'Doe')
 
 
-// CLOSURES + FUNCTION EXPRESSION 
-function sayHiLater(){
-	var greeting = 'Hi'
+// // CLOSURES + FUNCTION EXPRESSION 
 
-	setTimeOut(function(){
-		console.log(greeting);
-	}, 3000)
-};
+// function sayHiLater(){
+// 	var greeting = 'Hi'
 
-sayHiLater();
+// 	setTimeOut(function(){
+// 		console.log(greeting);
+// 	}, 3000)
+// };
+
+// sayHiLater();
 
 // CALLBACK FUNCTION - sending a function another function to run
+
+// FUNCTION EXECUTION CONTEXT - CALL(), APPLY(), BIND()
+
+var person = {
+	firstName: 'John',
+	lastName: 'Doe',
+	getFullName: function() {
+		var fullname = this.firstName + ' ' + this.lastName;
+		return fullname;
+	}
+}
+
+var logName = function(lang1, lang2) {
+	console.log('Logged: ' + this.getFullName());
+}
+
+var logPersonName = logName.bind(person)
+
+logPersonName('en');
+
+logName.call(person, 'en', 'es')  same as logName() but allows to determine the 'this' value and pass along parameters 
+
+logName.apply(person, ['en', 'es']) - expects params as an array 
+
+OR
+
+(function(lang1, lang2) {
+	console.log('Logged: ' + this.getFullName());
+}).apply(person, ['es', 'en']); 
+
+var person2 = {
+	firstName: 'Jane',
+	lastName: 'Doe'
+}
+person.getFullName.apply(person2)
+
+function currying 
+
+function multiply(a, b) {
+	return a*b;
+}
+
+var multiplyByTwo = multiply.bind(this, 2);
+
+
+
+
+
 
 
 
