@@ -1,332 +1,332 @@
-// function b() {
-// 	console.log(myVar)
-// }
+function b() {
+	console.log(myVar)
+}
 
-// function a() {
-// 	var myVar = 2
+function a() {
+	var myVar = 2
 	
-// 	b()
-// }
+	b()
+}
 
-// var myVar = 1 
+var myVar = 1 
 
-// a()
+a()
 
-// console.log(1 + '3')
+console.log(1 + '3')
 
-// console.log(1 < 2 < 1)
+console.log(1 < 2 < 1)
 
-// console.log(Number('three'))
+console.log(Number('three'))
 
-// console.log('2' == 2)
+console.log('2' == 2)
 
-// console.log('2' === 2)
+console.log('2' === 2)
 
-// var a = 0
+var a = 0
 
-// if (a) {
-// 	console.log('something is there')
-// }
+if (a) {
+	console.log('something is there')
+}
 
 
-// var a = 1
+var a = 1
 
-// if (a) {
-// 	console.log('something is there')
-// }
+if (a) {
+	console.log('something is there')
+}
 
-// var a = 0
+var a = 0
 
-// if (a || a === 0) {
-// 	console.log('something is there')
-// }
+if (a || a === 0) {
+	console.log('something is there')
+}
 
-// Default Values 
+Default Values 
 
-// function greet(name) {
-// 	name = name || '<Your name here>'
-// 	console.log('Hello ' + name)
-// }
+function greet(name) {
+	name = name || '<Your name here>'
+	console.log('Hello ' + name)
+}
 
- // es6 Default 
-// function greet(name = '<Your name here>') {
-// 	console.log('Hello ' + name)
-// }
+ es6 Default 
+function greet(name = '<Your name here>') {
+	console.log('Hello ' + name)
+}
 
-// greet()
+greet()
 
-// Objects and functions
+Objects and functions
 
-// var person = new Object()
+var person = new Object()
 
-// person["firstName"] = "Tony"
-// person["lastName"] = "Alicia"
+person["firstName"] = "Tony"
+person["lastName"] = "Alicia"
 
-// var firstNameProperty = "firstName"
+var firstNameProperty = "firstName"
 
-// console.log(person.firstName)
-// console.log(person[firstNameProperty])
+console.log(person.firstName)
+console.log(person[firstNameProperty])
 
-// Dot operator 
+Dot operator 
 
-// person.city = new Object()
-// // person.city = "Berkeley"
-// person.city.zip = "zip"
-// person.street = "Carleton"
-// console.log(person.city.zip)
+person.city = new Object()
+// person.city = "Berkeley"
+person.city.zip = "zip"
+person.street = "Carleton"
+console.log(person.city.zip)
 
-// Object Literal
+Object Literal
 
-// person = { 
-// 		firstName: 'Tony', 
-// 		lastname: 'Roma',
-// 		address: {
-// 			street: 'Carleton',
-// 			zip: '94702'
-// 		} 
-// 	}
+person = { 
+		firstName: 'Tony', 
+		lastname: 'Roma',
+		address: {
+			street: 'Carleton',
+			zip: '94702'
+		} 
+	}
 
-// console.log(person)
+console.log(person)
 
-// Functions = objects 
+Functions = objects 
 
-// function greet() {
-// 	console.log('hi')
-// }
+function greet() {
+	console.log('hi')
+}
 
-// greet.language = 'english'
+greet.language = 'english'
 
-// console.log(greet.language)
+console.log(greet.language)
 
-// Anonymous Functions
+Anonymous Functions
 
-// greet()
+greet()
 
-// function greet() {
-// 	console.log('Hi')
-// }
+function greet() {
+	console.log('Hi')
+}
 
-// anonymousGreet()
+anonymousGreet()
 
-// // v doesn not hoist 
-// var anonymousGreet = function() {
-// 	console.log('Hi')
-// }
+// v doesn not hoist 
+var anonymousGreet = function() {
+	console.log('Hi')
+}
 
-// function log(a) {
-// 	console.log(a)
-// }
+function log(a) {
+	console.log(a)
+}
 
-// var b = 3
-// log(b)
+var b = 3
+log(b)
 
-// function log(a) {
-// 	a()
-// }
+function log(a) {
+	a()
+}
 
-// log(function(){
-// 	console.log('Hi')
-// })
+log(function(){
+	console.log('Hi')
+})
 
-// BY VALVUE (PRIMITIVES)
-// var a = 3
-// var b 
+BY VALVUE (PRIMITIVES)
+var a = 3
+var b 
 
-// b = a 
-// a = 2
+b = a 
+a = 2
 
-// console.log(a)
-// console.log(b)
+console.log(a)
+console.log(b)
 
-// BY REFERENCE (all object including fucntions )
+BY REFERENCE (all object including fucntions )
 
-// var c = {
-// 	greeting: "What up"
-// }
-// var d
+var c = {
+	greeting: "What up"
+}
+var d
 
-// d = c 
-// c.greeting = "Hey"
+d = c 
+c.greeting = "Hey"
 
-// console.log(c)
-// console.log(d)
+console.log(c)
+console.log(d)
 
 
-// BY REFERENCE (EVEN AS PARAMETERS)
+BY REFERENCE (EVEN AS PARAMETERS)
 
-// function changeGreeting(obj) {
-// 	obj.greeting =  "Hola"
-// }
+function changeGreeting(obj) {
+	obj.greeting =  "Hola"
+}
 
-// changeGreeting(d)
-// console.log(c)
-// console.log(d)
+changeGreeting(d)
+console.log(c)
+console.log(d)
 
 
 
-// c = { greeting: "What" }
-// console.log(c)
-// console.log(d)
+c = { greeting: "What" }
+console.log(c)
+console.log(d)
 
-// GLOBAL LEVEL SCOPE 
+GLOBAL LEVEL SCOPE 
 
-// function a() {
-// 	console.log(this)
-// }
+function a() {
+	console.log(this)
+}
 
-// a()
+a()
 
-// var c = {
-// 	name: 'Cee',
-// 	log: function() {
-// 		console.log(this)
-// 	}
-// }
+var c = {
+	name: 'Cee',
+	log: function() {
+		console.log(this)
+	}
+}
 
-// c.log()
+c.log()
 
-// ARGUEMENTS
+ARGUEMENTS
 
-// function greet(first, middle, last = 'Flanders'){
-// 	console.log(first)
-// 	console.log(middle)
-// 	console.log(last)
-// }
+function greet(first, middle, last = 'Flanders'){
+	console.log(first)
+	console.log(middle)
+	console.log(last)
+}
 
-// greet()
-// greet('Homer')
-// greet('Homer', 'J')
-// greet('Homer', 'J', 'Simpson')
+greet()
+greet('Homer')
+greet('Homer', 'J')
+greet('Homer', 'J', 'Simpson')
 
-// AUTOMATIC SEMICOLONS
+AUTOMATIC SEMICOLONS
 
-// function soccer(){
-// 	return
-// 	{
-// 		ball: 'large'
-// 	}
-// }
+function soccer(){
+	return
+	{
+		ball: 'large'
+	}
+}
 
-// SO ALWAYS PUT ON SAME LINE
+SO ALWAYS PUT ON SAME LINE
 
-// function soccer(){
-// 	return {
-// 		ball: 'large'
-// 	}
-// }
+function soccer(){
+	return {
+		ball: 'large'
+	}
+}
 
-// Immediately Invoked Function Expressions (IIFE)
+Immediately Invoked Function Expressions (IIFE)
 
-// FUNCTION STATEMENT
+FUNCTION STATEMENT
 
-// function greet(name) {
-// 	console.log('Hello ' + name);
-// };
-// greet()
+function greet(name) {
+	console.log('Hello ' + name);
+};
+greet()
 
-// // FUNCTION Expression
+// FUNCTION Expression
 
-// var greetFunc = function(name){
-// 	console.log('Hello ' + name);
-// };
+var greetFunc = function(name){
+	console.log('Hello ' + name);
+};
 
-// greetFunc()
+greetFunc()
 
-// Immediately Invoked Function Expressions (IIFE)
+Immediately Invoked Function Expressions (IIFE)
 
-// var greeting = function(name){
-// 	return 'Hello ' + name;
-// }('Homer');
+var greeting = function(name){
+	return 'Hello ' + name;
+}('Homer');
 
-// console.log(greeting);
+console.log(greeting);
 
 
-// (function(name){
+(function(name){
 
-// 	return 'Hello ' + name;
+	return 'Hello ' + name;
 
-// }('Homer'));
+}('Homer'));
 
-// GLOBAL 
+GLOBAL 
 
-// global.name = 'World'
+global.name = 'World'
 
 
-// CLOSURES
+CLOSURES
 
-// function greet(whattosay) {
+function greet(whattosay) {
 
-// 	return function(name) {
-// 		console.log(whattosay + ' ' + name);
-// 	}
+	return function(name) {
+		console.log(whattosay + ' ' + name);
+	}
 
-// }
+}
 
-// greet('Hi')('Tony');
+greet('Hi')('Tony');
 
-// var sayHi = greet('Hi');
-// sayHi('Tony');
+var sayHi = greet('Hi');
+sayHi('Tony');
 
-// function buildFunctions() {
-// 	var arr = [];
+function buildFunctions() {
+	var arr = [];
 
-// 	for (var i = 0; i < 3; i++) {
+	for (var i = 0; i < 3; i++) {
 
-// 		arr.push(
-// 			function(){
-// 				console.log(i);
-// 			}
-// 		)
+		arr.push(
+			function(){
+				console.log(i);
+			}
+		)
 
-// 	}
-// 	return arr;
-// }
+	}
+	return arr;
+}
 
-// var fs = buildFunctions();
+var fs = buildFunctions();
 
-// fs[0]();
-// fs[1]();
-// fs[2]();
+fs[0]();
+fs[1]();
+fs[2]();
 
 
-// FUNCTION FACTORY
+FUNCTION FACTORY
 
-// function makeGreeting(language) {
+function makeGreeting(language) {
 
-// 	return function(firstName, lastName) {
-// 		if (language === 'en') {
-// 			console.log('Hello ' + firstName + ' ' + lastname)
-// 		} 
+	return function(firstName, lastName) {
+		if (language === 'en') {
+			console.log('Hello ' + firstName + ' ' + lastname)
+		} 
 
-// 		if (language === 'es') {
-// 			console.log('Hola ' + firstName + ' ' + lastname)
-// 		}
-// 	}
+		if (language === 'es') {
+			console.log('Hola ' + firstName + ' ' + lastname)
+		}
+	}
 
-// }
+}
 
-// var greetEnglish = makeGreeting('en')
-// var greetSpanish = makeGreeting('es')
+var greetEnglish = makeGreeting('en')
+var greetSpanish = makeGreeting('es')
 
-// greetEnglish('John', 'Doe')
-// greetSpanish('John', 'Doe')
+greetEnglish('John', 'Doe')
+greetSpanish('John', 'Doe')
 
 
-// // CLOSURES + FUNCTION EXPRESSION 
+// CLOSURES + FUNCTION EXPRESSION 
 
-// function sayHiLater(){
-// 	var greeting = 'Hi'
+function sayHiLater(){
+	var greeting = 'Hi'
 
-// 	setTimeOut(function(){
-// 		console.log(greeting);
-// 	}, 3000)
-// };
+	setTimeOut(function(){
+		console.log(greeting);
+	}, 3000)
+};
 
-// sayHiLater();
+sayHiLater();
 
-// CALLBACK FUNCTION - sending a function another function to run
+CALLBACK FUNCTION - sending a function another function to run
 
-// FUNCTION EXECUTION CONTEXT - CALL(), APPLY(), BIND()
+FUNCTION EXECUTION CONTEXT - CALL(), APPLY(), BIND()
 
 var person = {
 	firstName: 'John',
@@ -412,9 +412,42 @@ for (var prop in john ) {
 }
 
 
+______
 
 
+EXTEND 
 
+john.extend()
+
+___ 
+
+function Person() {
+
+	this.firstName = 'John';
+	this.lastname = 'Doe';
+
+}
+
+var john = new Person(); 
+
+______
+
+PROTOTYPE 
+
+Person.prototype.getFullName = function() {
+	return this.firstName + ' ' + this.lastName
+}
+
+______
+
+Function construtor always have uppercase first letter
+Always use 'new' operator for building new objects as an error will not show
+
+______
+'use strict';
+
+creates more stringent limitations for assigning variables, etc. 
+Put at top
 
 
 
